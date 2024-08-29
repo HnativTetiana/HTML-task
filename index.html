@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiotensive</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-content">
+                <a href="#" class="logo"><span>Cardio</span>tensive</a>
+                <nav>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#about-product">About Product</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="menu" onclick="menu()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </header>
+        <main>
+            <section id="hero">
+                <img src="./imgs/Cardiotensive.png" alt="Dietary supplement Cardiotensive">
+                <div class="information-container">
+                    <h1>Dietary supplement Cardiotensive</h1>
+                    <div class="cardiotensive-description">
+                        <p>
+                            Cardiotensive is a dietary supplement aimed at promoting heart health through a combination
+                            of
+                            natural ingredients known for their cardiovascular benefits.
+                        </p>
+                        <p>
+                            While it may offer support in maintaining healthy blood pressure and improving heart
+                            function,
+                            it's important to use it responsibly and in consultation with a healthcare provider.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="about-product">
+                <h2>The main advantages Cardiotensive</h2>
+                <ul class="benefits-list">
+                    <li>
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Heart Health Improvement</h3>
+                        <p>
+                            Cardiotensive supports overall cardiovascular function, helping to strengthen your heart and
+                            promote better blood circulation.
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Blood Pressure Regulation</h3>
+                        <p>
+                            With its unique blend of natural ingredients, Cardiotensive aids in maintaining optimal
+                            blood pressure levels, ensuring a balanced and healthy life.
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fas fa-bolt"></i>
+                        <h3>Increased Energy Levels</h3>
+                        <p>
+                            Experience a natural boost in energy, thanks to the powerful antioxidants and vitamins that
+                            support your body's daily needs.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="reviews">
+                <h2>Customer reviews about Cardiotensive</h2>
+                <ul class="reviews-list"></ul>
+            </section>
+            <section id="contacts">
+                <div class="contacts-container">
+                    <h2>Fill the contact form</h2>
+                    <form action="./thanks.html" onsubmit="handleSubmit(event)">
+                        <input type="text" id="name" placeholder="Enter your first name" required
+                            oninput="spaces(this)" />
+                        <input type="tel" id="phone" placeholder="Enter your phone number" minlength="13" maxlength="13"
+                            pattern="\+[0-9]{12}" title="International format (+12 digits): +XXXXXXXXXXXX" required
+                            oninput="spaces(this)" />
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

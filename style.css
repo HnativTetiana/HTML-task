@@ -1,0 +1,391 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #111111;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vw;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #111111;
+}
+
+main {
+    background-color: rgba(144, 238, 144, 0.1);
+}
+
+section {
+    padding: 30px;
+}
+
+section h2 {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-shadow: -1px -1px 0 #111111, 1px -1px 0 #111111, -1px 1px 0 #111111, 1px 1px 0 #111111;
+}
+
+/* ------------------------------- Header -------------------------------*/
+
+header {
+    background-color: pink;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.logo span {
+    color: red;
+}
+
+.header-content nav {
+    justify-self: center;
+}
+
+.nav-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+
+.nav-list a {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    color: green;
+}
+
+#menu {
+    grid-column: 3;
+    justify-self: flex-end;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.toggle {
+    display: none;
+}
+
+/* ------------------------------------ Section hero  ------------------------------------ */
+
+#hero {
+    width: 100%;
+    min-height: 500px;
+    box-sizing: border-box;
+    background-color: rgba(144, 238, 144, 0.5);
+
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero img {
+    width: 300px;
+}
+
+#hero h1 {
+    font-size: 28px;
+    text-align: center;
+    color: darkgreen;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-shadow: -1px -1px 0 #111111, 1px -1px 0 #111111, -1px 1px 0 #111111, 1px 1px 0 #111111;
+}
+
+.information-container {
+    max-width: 600px;
+}
+
+/* ------------------------------ Section about-product  ------------------------------ */
+
+#about-product {
+    min-height: 400px;
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-product h2 {
+    color: rgba(144, 238, 144, 0.8);
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.benefits-list li {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.benefits-list i {
+    font-size: 30px;
+    color: red;
+}
+
+.benefits-list h3 {
+    text-align: center;
+}
+
+/* ----------------------------------- Section reviews ----------------------------------- */
+
+#reviews {
+    background-color: rgba(255, 192, 203, 0.2);
+}
+
+#reviews h2 {
+    color: palevioletred;
+    margin-bottom: 80px;
+}
+
+.reviews-list {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reviews-list li {
+    max-width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.reviews-list li:hover,
+.reviews-list li:focus {
+    transform: scale(0.8);
+}
+
+.reviews-list img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.reviews-list h3 {
+    text-align: center;
+}
+
+/* ----------------------------------- Section contacts ----------------------------------- */
+
+#contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.contacts-container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: rgba(144, 238, 144, 0.5);
+}
+
+#contacts h2 {
+    color: rgba(144, 238, 144, 0.8);
+}
+
+#contacts form {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts input {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 8px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+#contacts button {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: green;
+    border-color: green;
+    padding: 5px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#contacts button:hover,
+#contacts button:focus {
+    background-color: rgba(0, 128, 0, 0.8);
+}
+
+/* --------------------------------------------------- Thanks page --------------------------------------------------- */
+
+.message {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #111111;
+    background-color: pink;
+
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message p,
+h1 {
+    text-align: center;
+}
+
+.message h1 {
+    font-size: 25px;
+}
+
+.message p {
+    font-size: 20px;
+}
+
+.message span {
+    color: rgba(255, 0, 0, 0.8);
+    max-width: calc(100% - 5%);
+    word-break: break-word;
+}
+
+/* ---------------------------------------------------- Adaptive  ---------------------------------------------------- */
+
+@media(max-width: 768px) {
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    /* --------------------------------------- Header --------------------------------------- */
+
+    header {
+        align-items: start;
+        padding-top: 30px;
+    }
+
+    .logo {
+        justify-self: center;
+    }
+
+    .header-content {
+        align-items: center;
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+
+    .nav-list {
+        grid-template-columns: auto;
+        gap: 30px;
+        padding-left: 30px;
+    }
+
+    .nav-list li {
+        text-align: center;
+        justify-self: center;
+        background-color: rgba(172, 255, 47, 0.5);
+        width: 200px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    /* ------------------------------------ Section hero  ------------------------------------ */
+
+    #hero {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #hero h1 {
+        font-size: 25px;
+    }
+
+    /* -------------------------------- Section about-product -------------------------------- */
+
+    .benefits-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 425px) {
+
+    /* ---------------------------------- Section contacts ---------------------------------- */
+
+    .contacts-container {
+        min-width: 300px;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    #contacts input {
+        font-size: 18px;
+    }
+
+    #contacts button {
+        font-size: 16px;
+    }
+}
