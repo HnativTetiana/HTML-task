@@ -98,8 +98,8 @@
                     <form action="./thanks.html" onsubmit="handleSubmit(event)">
                         <input type="text" id="name" placeholder="Enter your first name" required
                             oninput="spaces(this)" />
-                        <input type="tel" id="phone" placeholder="Enter your phone number" minlength="13" maxlength="13"
-                            pattern="\+[0-9]{12}" title="International format (+12 digits): +XXXXXXXXXXXX" required
+                        <input type="tel" id="phone" placeholder="Enter your phone number" minlength="8" maxlength="16"
+                            pattern="^\+\d+$" title="Please, enter + and from 7 to 15 digits" required
                             oninput="spaces(this)" />
                         <button type="submit">Send</button>
                     </form>
